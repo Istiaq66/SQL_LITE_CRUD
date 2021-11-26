@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+
+
+
+        <EditText
+            android:id="@+id/txtname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#CFD8DC"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/txtmessage"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtmessage"
+            android:ems="10"
+            android:hint="Enter Name"
+            />
+
+
+        <EditText
+            android:id="@+id/txtmobileinsert"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#CFD8DC"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignLeft="@+id/txtAddress"
+            android:layout_alignRight="@+id/txtAddress"
+            android:ems="10"
+            android:hint="Enter Your Mobile"
+            android:inputType="phone" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/lblmsge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView1"
+            android:layout_alignLeft="@+id/txtmessage"
+            android:layout_alignRight="@+id/txtmessage"
+            android:layout_marginBottom="14dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:orientation="horizontal"
+            android:background="#737373"
+            android:gravity="center"
+            >
+
+            <ImageButton
+                android:id="@+id/btnsave"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_below="@+id/txtoffice"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_corner"
+                android:onClick="submit_Click"
+                android:src="@drawable/save" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
